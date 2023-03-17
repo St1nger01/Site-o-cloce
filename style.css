@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: absolute;
+    width: 200px; 
+    height: 200px;
+    background: #fff;
+    border-radius: 100%;
+    border: 3px solid black;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.container .top {
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background-color: black;
+    left:0;
+    right: 0;
+    margin: auto;
+}
+.container .left {
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: black;
+    top:0;
+    bottom: 0;
+    margin: auto;
+}
+.container .right {
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    background-color: black;
+    top:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.container .bottom {
+    position: absolute;
+    width: 2px;
+    height: 8px;
+    background-color: black;
+    right:0;
+    bottom: 0;
+    left:0;
+    margin: auto;
+}
+.container .center{
+    position:absolute;
+    height: 5px;
+    width: 5px;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    margin:auto;
+    background-color: black;
+    border-radius: 100%;
+}
+.container .second{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 15s infinite linear;
+}
+.container .second:before{
+    position: absolute;
+    content: "";
+    background-color: red;
+    height: 80px;
+    width: 2px;
+    top:80px;
+}
+.container .minute{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 30s infinite linear;
+}
+.container .minute:before{
+    position: absolute;
+    content: "";
+    background-color: black;
+    height: 50px;
+    width: 3px;
+    top:50px;
+}
+.container .hour{
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    animation: time 60s infinite linear;
+}
+.container .hour:before{
+    position: absolute;
+    content: "";
+    background-color: grey;
+    height: 35px;
+    width: 4px;
+    top:70px;
+}
+@keyframes time {
+    to{transform: rotate(360deg);}
+}
